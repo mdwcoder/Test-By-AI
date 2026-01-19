@@ -1,0 +1,38 @@
+{
+  "summary": {
+    "total": 8,
+    "passed": 6,
+    "failed": 2,
+    "errors": 0
+  },
+  "suites": [
+    {
+      "name": "smoke",
+      "results": []
+    },
+    {
+      "name": "contract",
+      "results": []
+    },
+    {
+      "name": "negative",
+      "results": [
+        {
+          "method": "POST",
+          "path": "/users",
+          "status": "FAIL",
+          "status_code": 201,
+          "error": "[empty_body] Unexpected Success 201 on negative test"
+        },
+        {
+          "method": "POST",
+          "path": "/users",
+          "status": "FAIL",
+          "status_code": 201,
+          "error": "[invalid_types] Unexpected Success 201 on negative test"
+        }
+      ]
+    }
+  ],
+  "ai_analysis": null
+}
